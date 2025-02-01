@@ -8,7 +8,7 @@ interface TreeNodeProps {
   CustomIcon: React.ComponentType;
 }
 
-const TreeNode = ({ nodeContent, CustomIcon }: TreeNodeProps) => {
+const TreeNode = ({ nodeContent, CustomIcon }: TreeNodeProps): JSX.Element => {
   const [nodeIsOpened, setNodeIsOpened] = useState<boolean>(false);
   const toggleFolder = (e: React.MouseEvent<HTMLButtonElement>): void => {
     e.stopPropagation();

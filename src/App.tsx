@@ -25,7 +25,7 @@ export const getIcon = (node: FolderTreeProps): React.ComponentType => {
 
 // mock fetch function
 const fetchJsonData = async (): Promise<FolderTreeProps[]> => {
-  const response = await fetch("src/data.json");
+  const response = await fetch("/data.json");
   if (!response.ok) {
     throw new Error(`Status: ${response.status}`);
   }
